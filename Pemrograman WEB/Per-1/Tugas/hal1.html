@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" href="logo.png">
+    <title>BMI Kalkulator By Firstasya</title>
+    <link rel="stylesheet" href="hal.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BMI Kalkulator</h2>
+
+        <label for="gender">Pilih Jenis Kelamin:</label><br>
+        <input type="radio" name="gender" value="male" id="male" checked> <label for="male">Laki-laki</label>
+        <input type="radio" name="gender" value="female" id="female"> <label for="female">Perempuan</label>
+        
+        <br><br>
+
+        <label for="berat">Berat (kg):</label>
+        <input type="number" id="berat" placeholder="Masukkan berat" required>
+
+        <label for="tinggi">Tinggi (cm):</label>
+        <input type="number" id="tinggi" placeholder="Masukkan tinggi" required>
+
+        <button onclick="hitungBMI()">Hitung BMI</button>
+    </div>
+
+    <script src="hal.js"></script>
+</body>
+</html>
